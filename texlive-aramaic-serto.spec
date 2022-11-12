@@ -1,18 +1,12 @@
-# revision 30042
-# category Package
-# catalog-ctan /language/aramaic/serto
-# catalog-date 2013-04-18 13:30:17 +0200
-# catalog-license lppl1.3
-# catalog-version 1.0
 Name:		texlive-aramaic-serto
-Version:	1.0
-Release:	11
+Version:	30042
+Release:	1
 Summary:	Fonts and LaTeX for Syriac written in Serto
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/aramaic/serto
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aramaic-serto.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aramaic-serto.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aramaic-serto.r30042.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aramaic-serto.doc.r30042.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ choose the correct letter depending on word context
 examples are included.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -77,7 +71,7 @@ examples are included.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
