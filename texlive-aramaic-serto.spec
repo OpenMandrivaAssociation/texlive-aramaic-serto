@@ -5,8 +5,8 @@ Summary:	Fonts and LaTeX for Syriac written in Serto
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/aramaic/serto
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aramaic-serto.r30042.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aramaic-serto.doc.r30042.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aramaic-serto.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aramaic-serto.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
