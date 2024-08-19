@@ -1,6 +1,6 @@
 Name:		texlive-aramaic-serto
-Version:	30042
-Release:	2
+Version:	71991
+Release:	1
 Summary:	Fonts and LaTeX for Syriac written in Serto
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/aramaic/serto
